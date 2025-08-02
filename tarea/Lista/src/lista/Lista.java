@@ -61,7 +61,7 @@ public class ListaDeTareas {
                     System.out.print("Ingrese la descripción: ");
                     String descripcion = scanner.nextLine();
                     tareas.add(new Tarea(titulo, descripcion));
-                    System.out.println("✅ Tarea agregada con éxito.");
+                    System.out.println(" Tarea agregada con éxito.");
                     break;
 
                 case 2:
@@ -80,9 +80,9 @@ public class ListaDeTareas {
                     int indice = Integer.parseInt(scanner.nextLine());
                     if (indice >= 0 && indice < tareas.size()) {
                         tareas.remove(indice);
-                        System.out.println("✅ Tarea eliminada.");
+                        System.out.println(" Tarea eliminada.");
                     } else {
-                        System.out.println("❌ Índice no válido.");
+                        System.out.println(" Índice no válido.");
                     }
                     break;
 
@@ -106,7 +106,7 @@ public class ListaDeTareas {
                     break;
 
                 default:
-                    System.out.println("❌ Opción inválida. Intente nuevamente.");
+                    System.out.println(" Opción inválida. Intente nuevamente.");
             }
         } while (opcion != 5);
 
@@ -118,3 +118,4 @@ public class ListaDeTareas {
     }
     
 }
+
